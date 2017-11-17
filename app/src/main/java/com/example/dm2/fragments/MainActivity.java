@@ -22,11 +22,11 @@ public class MainActivity extends AppCompatActivity implements PeliculasListener
                 getSupportFragmentManager().findFragmentById(R.id.FrgDetalle)!=null;
         if (hayDetalle){
             ((FragmentDetalle) getSupportFragmentManager()
-                    .findFragmentById(R.id.FrgDetalle)).mostrarDetalle(p.getTitulo());
+                    .findFragmentById(R.id.FrgDetalle)).mostrarDetalle("Titulo: "+p.getTitulo()+"\nDirector: "+""+p.getDirector()+"\nCompositor: "+p.getCompositor());
         }
         else {
-            Intent i = new Intent(this, DetalleActivity.class);
-            i.putExtra(DetalleActivity.EXTRA_TEXTO, p.getTitulo());
+            Intent i = new Intent(this, DetalleActivity.class);//Si quiero pasar objeto completo p, debe ser serializable
+            i.putExtra(DetalleActivity.EXTRA_TEXTO, "Titulo: "+p.getTitulo()+"\nDirector: "+""+p.getDirector()+"\nCompositor: "+p.getCompositor());
             startActivity(i);
         }
     }

@@ -15,11 +15,11 @@ import android.widget.TextView;
 public class FragmentListado extends Fragment {
     private Pelicula[] datos =
             new Pelicula[]{
-                    new Pelicula("Hola", "Hola", "Hola"),
-                    new Pelicula("Hola", "Hola", "Hola"),
-                    new Pelicula("Hola", "Hola", "Hola"),
-                    new Pelicula("Hola", "Hola", "Hola"),
-                    new Pelicula("Hola", "Hola", "Hola")};
+                    new Pelicula("Peli 1", "Hola", "Hola"),
+                    new Pelicula("Peli 2", "Hola", "Hola"),
+                    new Pelicula("Peli 3", "Hola", "Hola"),
+                    new Pelicula("Peli 4", "Hola", "Hola"),
+                    new Pelicula("Peli 5", "Hola", "Hola")};
     private ListView lstListado;
     private PeliculasListener listener;
 

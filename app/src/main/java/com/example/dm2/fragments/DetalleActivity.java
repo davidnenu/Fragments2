@@ -3,8 +3,7 @@ package com.example.dm2.fragments;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 public class DetalleActivity extends AppCompatActivity {
-    public static final String EXTRA_TEXTO =
-            "com.example.dm2.fragments.EXTRA_TEXTO";
+    public static final String EXTRA_TEXTO ="";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
